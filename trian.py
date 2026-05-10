@@ -64,4 +64,4 @@ for actual, predicted, prob in zip(y_test, y_pred, probabilities):
         
 # Save the model
 joblib.dump(scaler,"scaler.pkl")
-# joblib.dump(model,"philixa_model.pkl")
+joblib.dump(model,"philixa_model.pkl")
