@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score , classification_report, confusion_matrix
+import joblib
 
 # 1. Load data
 df = pd.read_csv("featured_data_v9.csv")
@@ -60,3 +61,7 @@ for actual, predicted, prob in zip(y_test, y_pred, probabilities):
         print("Actual:", actual,
               "Predicted:", predicted,
               "Probability:", prob)
+        
+# Save the model
+joblib.dump(scaler,"scaler.pkl")
+# joblib.dump(model,"philixa_model.pkl")
