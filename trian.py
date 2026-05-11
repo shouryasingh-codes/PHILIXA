@@ -30,37 +30,37 @@ model = LogisticRegression()
 model.fit(X_train, y_train)
 
 # 6. Prediction
-# y_pred = model.predict(X_test)
+y_pred = model.predict(X_test)
 
 # 7. Accuracy
 
-# print("Accuracy:", accuracy_score(y_test, y_pred))
-# print(confusion_matrix(y_test, y_pred))
-# print(classification_report(y_test, y_pred))
+print("Accuracy:", accuracy_score(y_test, y_pred))
+print(confusion_matrix(y_test, y_pred))
+print(classification_report(y_test, y_pred))
 
-# probabilities = model.predict_proba(X_test)
+probabilities = model.predict_proba(X_test)
 
-# print(probabilities[:5])
-# print(y_pred[:5])
-# for actual, predicted in zip(y_test[:10], y_pred[:10]):
-#     print("Actual:", actual, "Predicted:", predicted)
+print(probabilities[:5])
+print(y_pred[:5])
+for actual, predicted in zip(y_test[:10], y_pred[:10]):
+    print("Actual:", actual, "Predicted:", predicted)
 
 
-# print("///////////////////////////////////////////////////////////////////////////////")
+print("///////////////////////////////////////////////////////////////////////////////")
 
-# for actual, predicted in zip(y_test, y_pred):
+for actual, predicted in zip(y_test, y_pred):
 
-#     if actual != predicted:
-#         print("Actual:", actual, "Predicted:", predicted)
-# print("/////////////////////////////////////////////////////////////////////////////////")
-# probabilities = model.predict_proba(X_test)
+    if actual != predicted:
+        print("Actual:", actual, "Predicted:", predicted)
+print("/////////////////////////////////////////////////////////////////////////////////")
+probabilities = model.predict_proba(X_test)
 
-# for actual, predicted, prob in zip(y_test, y_pred, probabilities):
+for actual, predicted, prob in zip(y_test, y_pred, probabilities):
 
-#     if actual != predicted:
-#         print("Actual:", actual,
-#               "Predicted:", predicted,
-#               "Probability:", prob)
+    if actual != predicted:
+        print("Actual:", actual,
+              "Predicted:", predicted,
+              "Probability:", prob)
         
 # Save the model
 joblib.dump(scaler,"scaler.pkl")
