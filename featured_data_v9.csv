@@ -1,4 +1,4 @@
-answer,label,word_count,avg_word_length,unique_word_ratio,sentence_complexity_score,strong_verbs_count,grammer_error_count
+answer,label,word_count,avg_word_length,unique_word_ratio,sentence_complexity_score,strong_verbs_count,grammar_error_count
 I come to one-on-one meeting without any update or topic prepared and the meeting feel like waste of time for both side.,0,22,4.454545,0.9545454545454546,2,1,0
 "I handled a complaint so poorly once that I thought about it for days afterward, and it permanently changed how I respond to conflict.",1,24,4.541667,0.875,3,1,0
 "I read the instruction manual properly before attempting the task, and it saved me from the mistake everyone else was making.",1,21,4.904762,0.9047619047619048,2,1,0

@@ -110,7 +110,7 @@ df["avg_word_length"] = avg_word_lengths
 df["unique_word_ratio"] = unique_words_ratio
 df["sentence_complexity_score"] = Sentence_complexity_scores
 df["strong_verbs_count"] = strong_verbs_counts
-df["grammer_error_count"]=gramer_eror
+df["grammar_error_count"]=gramer_eror
 
 print(df.head())
 
